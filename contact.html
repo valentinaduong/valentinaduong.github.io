@@ -12,17 +12,20 @@
             <!-- CSS Style Sheet -->
             <link href="css/styles.css" rel="stylesheet"/>
             <!-- Debugging -->
-            <style>body div { border: 1px solid red; }</style>
+            <!-- <style>body div { border: 1px solid red; }</style> -->
       </head>
 
       <body>
-      <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg" id="mainNav">
           <div class="container">
             <a class="navbar-brand" href="index.html">Valentina</a>
               <ul class="nav justify-content-center nav-pills">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Work</a>
+                  <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Play</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
@@ -36,6 +39,47 @@
               </ul>
           </div>
         </nav>
+
+        <!-- Contact form -->
+        <div class="container">
+          <div class="col-md-6 mt-3 mb-4">
+            <h1>I'd love to hear from you!</h1>
+            <p>Please leave your message and I'll be in touch as soon as possible. Thanks!</p>
+          </div>
+          <div class="col-md-6 mt-3 mb-4" id="contact">
+            <form class="needs-validation" novalidate>
+              <div class="form-row mb-3">
+                <div class="form-group col-xs-6">
+                      <label class="form-label" for="inputMessage"><h3><b>Name</b></h3></label>
+                      <div class="input-group">
+                            <input style="width:50%" class="form-control" placeholder="First Name"  name="firstName" type="text"/>
+                            <input style="width:50%" class="form-control" placeholder="Last Name"  name="lastName" type="text"/>
+                      </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                      <label class="form-label" for="inputMessage"><h3><b>Email</b></h3></label>
+                      <input type="email" class="form-control" style="width:50%" placeholder="hello@example.com" aria-label="Email address input"/>
+              </div>
+              <div class="mb-3">
+                      <label class="form-label" for="inputMessage"><h3><b>What are you interested in?</b></h3></label>
+                      <div class="input-group" style="width:50%">
+                          <select class="form-select" aria-label="Subject selection">
+                            <option selected>Let's talk about...</option>
+                            <option value="1">Graphic design services</option>
+                            <option value="2">Illustration services</option>
+                            <option value="3">Project collaboration</option>
+                          </select>
+                        </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="inputMessage"><h3><b>Message</b></h3></label>
+                <textarea class="form-control" rows="8" placeholder="Tell me more about your thoughts..." aria-label="Message input"></textarea>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </div>
 
         <!-- Footer -->
         <footer class="footer text-center p-3" id="footer">
