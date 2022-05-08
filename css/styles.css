@@ -32,6 +32,7 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #5FD292;
+  background-color: white;
 }
 
 #about {
@@ -164,7 +165,6 @@ p {
   bottom: 0;
   position: fixed;
   left: 0;
-  bottom: 0;
   width: 100%;
   font-family: "Open Sans", sans-serif;
   background-color: #5FD292;
@@ -176,15 +176,15 @@ p {
   outline: none;
   border-radius: 50px;
   padding: 8px;
-  background-color: #FBE6F0;
-  color: #F26BAA;
+  background-color: #F12B81;
+  color: white;
   min-height: 40px;
   min-width: 88.28px;
 }
 
 .btn:hover {
   color: white;
-  background: #F12B81;
+  background: #c80061;
 }
 
 .bi:hover {
